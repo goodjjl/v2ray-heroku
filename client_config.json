@@ -9,6 +9,17 @@
     "settings": {}
   },
   "inboundDetour": [
+    {
+      "protocol": "shadowsocks",
+      "port": 30001, // 监听 30001 端口
+      "settings": {
+        "method": "aes-256-cfb", 
+        "password": "V2Ray",     // 密码，必须和客户端相同
+        "udp": false             // 是否开启 UDP 转发
+      }
+    }
+  ],
+  "inboundDetour": [
   {
     "port": 1080,
     "protocol": "socks",
